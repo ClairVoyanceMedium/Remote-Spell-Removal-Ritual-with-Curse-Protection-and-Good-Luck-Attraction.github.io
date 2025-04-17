@@ -1,42 +1,100 @@
-# Indique aux robots que toutes les pages peuvent être explorées, sauf restrictions spécifiées
+# Robots.txt optimized for 2025 - Built to dominate the U.S. market
+# Tailored for U.S. audiences, AI, Google AI, voice assistants, and advanced SEO
+# Site: https://clairvoyancemedium.github.io/Remote-Spell-Removal-Ritual-with-Curse-Protection-and-Good-Luck-Attraction.github.io/
+# Last updated: 04/18/2025 14:00 GMT
+# Note: Validate with Google Search Console and robotstxt.org
+
+##########################
+# General Permissions    #
+##########################
 User-agent: *
-Disallow: /admin/
-Disallow: /tmp/
+Disallow: /private/          # Private directories (e.g., admin, scripts)
+Disallow: /temp/             # Temporary folders
+Disallow: /*?*               # Prevent duplicate content (URL parameters)
+Allow: /*.css$               # CSS for optimal rendering (all bots)
+Allow: /*.js$                # Essential JS (all bots)
+Allow: /*.pdf$               # Strategic PDFs (e.g., guides)
+Allow: /                     # Default access
+
+########################################
+# Googlebot (including Google AI 2025) #
+########################################
+User-agent: Googlebot
+Disallow: /private/
+Disallow: /temp/
+Allow: /rituals/
+Allow: /protection/
+Allow: /spell-removal/
+
+###########################################
+# Voice Assistants                        #
+###########################################
+User-agent: Googlebot-Voice
+Disallow: /private/
+Disallow: /temp/
+Allow: /faq/
+Allow: /simple-rituals/
+Allow: /tips/
+User-agent: Amazonbot        # For Alexa
+Disallow: /private/
+Disallow: /temp/
+Allow: /faq/
+Allow: /tips/
+User-agent: Applebot         # For Siri
+Disallow: /private/
+Disallow: /temp/
+Allow: /faq/
+Allow: /tips/
+
+###########################################
+# Bing (U.S. market focus)                #
+###########################################
+User-agent: Bingbot
+Disallow: /private/
+Disallow: /temp/
+
+#################################
+# Blocking unwanted bots        #
+#################################
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+
+##################################################
+# Google Partners and Analytics                  #
+##################################################
+User-agent: Mediapartners-Google
+Disallow: /private/
+User-agent: AdsBot-Google
 Disallow: /private/
 
-# Bloquer des URL avec paramètres inutiles pour l'indexation
-Disallow: /*?debug=true
-Disallow: /*?preview=true
+##################################################
+# Emerging AI Crawlers (2025 readiness)          #
+##################################################
+User-agent: xAI-Crawler
+Disallow: /private/
+User-agent: OpenAI-Crawler
+Disallow: /private/
+User-agent: AnthropicBot
+Disallow: /private/
+User-agent: PerplexityBot    # U.S.-based AI crawler
+Disallow: /private/
 
-# Permettre les fichiers nécessaires au bon affichage et fonctionnement
-Allow: /css/
-Allow: /js/
-Allow: /images/
+##################################################
+# Advanced Optimization (mobile-first)           #
+##################################################
+User-agent: Googlebot-Mobile
+Disallow: /private/
+Disallow: /temp/
+Allow: /rituals/
+Allow: /protection/
+Allow: /spell-removal/
 
-# Référencement des ressources multimédias
-Allow: *.png
-Allow: *.jpg
-Allow: *.webp
-Allow: *.css
-Allow: *.js
-
-# Fournir le chemin du fichier sitemap pour une meilleure indexation
-Sitemap: https://www.clairvoyancemedium.com/sitemap.xml
-
-# Autorisation pour les robots Google et Bing pour maximiser les campagnes publicitaires
-User-agent: Googlebot
-Allow: /
-User-agent: AdsBot-Google
-Allow: /
-User-agent: Bingbot
-Allow: /
-
-# Bloquer les robots nuisibles ou non désirés
-User-agent: BadBot
-Disallow: /
-User-agent: EvilScraper
-Disallow: /
-
-# Empêcher l'exploration des fichiers sensibles
-Disallow: /config/
-Disallow: /backup/
+##################
+# Sitemap and Crawl #
+##################
+Sitemap: https://clairvoyancemedium.github.io/Remote-Spell-Removal-Ritual-with-Curse-Protection-and-Good-Luck-Attraction.github.io/sitemap.xml
+Crawl-delay: 0.5
